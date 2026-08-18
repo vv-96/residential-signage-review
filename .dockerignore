@@ -1,0 +1,13 @@
+node_modules
+dist
+.next
+.vinext
+.git
+.env
+.cache
+.npm-cache
+.npm-tmp-cache
+*.log
+test-*.jpg
+pdfium.tgz
+pngjs.tgz
