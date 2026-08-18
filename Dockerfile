@@ -16,7 +16,7 @@ ENV NODE_ENV=production
 ENV PORT=8080
 
 COPY --from=build /app/package.json /app/package-lock.json ./
-RUN npm ci --omit=dev
+COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
 
 EXPOSE 8080
